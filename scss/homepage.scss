@@ -1,0 +1,107 @@
+.navbar{
+	background-color:$blue;
+    padding: 0px 10px;
+    height: 42px;
+	@include clearfix;
+	&__left{
+	    float: left;
+	    background-color: $blue;
+	    width: 45%;
+	    padding: 0 35px;
+		@include clearfix;
+	}
+	&__logo{
+		font-size: 28px;
+		float: left;
+		.fa{
+			color:white;
+		}
+	}
+	&__search{
+	    float: right;
+	    width: 92%;
+	    margin-top: 9px;
+	    margin-bottom: 0;
+	    border-radius: 4px;
+		input{
+		    margin: 0;
+		    height: 25px;
+		    border-radius: 4px;
+		    background-color:white;
+		}
+		@mixin placeholder {
+			::-webkit-input-placeholder {@content}
+			:-moz-placeholder           {@content}
+			::-moz-placeholder          {@content}
+			:-ms-input-placeholder      {@content}  
+		}
+		@include placeholder {
+			color: black;
+		}
+
+	}
+	&__right{
+		float: right;
+		width:45%;
+		@include clearfix;
+	}
+	&__list{
+		@include clearfix;
+		list-style:none;
+		margin:0;
+		padding-top: 10px;
+		float: left;
+		li{
+			float: left;
+			color:white;
+			padding-left:10px;
+			font-size: 12px;
+			font-weight:bold;
+		}
+		.navName{
+			border-right:1px solid rgba(10, 10, 10, 0.18);
+			padding-right:10px;
+		}
+	}
+	&__icons{
+	    list-style: none;
+		background-color:$blue;
+		margin: 0;
+		padding: 0;
+		margin-top: 2px;
+		float: left;
+		padding-left: 10px;
+		@include clearfix;
+		margin-top: 7px;
+		margin-left: 24px;
+	}
+	.icon{
+		float: left;
+		max-height: 33px;
+		&__1{
+			img{
+			    width: 35px;
+			}
+		}
+		&__2{
+			img{
+				width: 30px;
+			    margin-top: -3px;
+			    margin-right: 8px;
+			}
+		}
+		&__3{
+		    width: 48px;
+		    HEIGHT: 23PX;
+		    margin-top: -2px;
+		    margin-right: 25px;
+		    border-right: 1PX SOLID rgba(24, 36, 61, 0.4);
+		    PADDING-RIGHT: 22PX;	
+		}
+		&__4{
+		    width: 37px;
+		    margin-top: -2px;
+		}
+	}
+
+}
