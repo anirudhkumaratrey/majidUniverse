@@ -108,14 +108,35 @@
 		background-color:red;
 		@include clearfix;
 		width:100%;
+		height: 100%;
 		margin:0;
 		overflow: hidden;
+		background-color:#3b5998;
 		a{
 			float: left;
 			max-width: 16%;
 		}
 	}
+	#msg-mobile{
+		margin-top: -3px;
+	}
+	#notifications-mobile{
+		margin-top: -3px;
+		padding: 2px;
+	}
+	#search-mobile{
+		padding: 6px;
+		margin-top: -6px;
+	}
+	#menu-mobile{
+		float: right;
+		li{
+			margin-top: -7px;
+			padding: 7px;
+		}
+	}
 	@include breakpoint (medium down){
 		padding:0;
+		height: 55px;
 	}
 }
