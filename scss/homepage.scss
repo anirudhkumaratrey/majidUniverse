@@ -103,5 +103,19 @@
 		    margin-top: -2px;
 		}
 	}
-
+	&__mobile{
+		list-style:none;
+		background-color:red;
+		@include clearfix;
+		width:100%;
+		margin:0;
+		overflow: hidden;
+		a{
+			float: left;
+			max-width: 16%;
+		}
+	}
+	@include breakpoint (medium down){
+		padding:0;
+	}
 }
