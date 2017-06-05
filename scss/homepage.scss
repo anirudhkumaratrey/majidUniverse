@@ -140,3 +140,40 @@
 		height: 55px;
 	}
 }
+.coverCont{
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align:center;
+}
+.profile{
+	&__picture{
+		padding-top: 15%;
+		border: 2px solid black;
+		background-repeat: no-repeat;
+		background-position: lef;
+		position: absolute;
+		left: 2%;
+		top: 121px;
+		width: 17%;
+		padding-left: 0;
+		background-size: cover;
+	}
+	&__name{
+		position: absolute;
+		left: 20%;
+		top: 80%;
+		font-size: 25px;
+	}
+}
+.taskBar{
+	border: 1px solid gray;
+	padding-top: 31px;
+	list-style: none;
+	padding-left:40%;
+	@include clearfix;
+	a{
+		float: left;
+	}
+}
