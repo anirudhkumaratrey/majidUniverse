@@ -148,6 +148,7 @@
     text-align:center;
 }
 .profile{
+	position: relative;
 	&__picture{
 		padding-top: 15%;
 		border: 2px solid black;
@@ -175,5 +176,7 @@
 	@include clearfix;
 	a{
 		float: left;
+		border: 1px solid gray;
+	    padding: 10px 30px;
 	}
 }
