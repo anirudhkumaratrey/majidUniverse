@@ -199,9 +199,15 @@
 .tabs-content{
 	border:none;
 }
-// .tabs-panel{
-// 	background-color:$gray;
-// }
+.tabs-panel{
+	padding:0;
+}
+.tab_content{
+	border: 10px solid $gray;
+    background-color: white;
+    text-align: left;
+    font-size: 13px;
+}
 #first_empty{
 }
 #last_empty{
