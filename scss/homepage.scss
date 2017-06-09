@@ -183,12 +183,25 @@
 		font-size: 16px;
 		font-weight: bold;
 		color: #365899!important;
-		
+		[aria-selected='true']{
+			background-color:white!important;
+			color:#0c3d5d !important;
+		}
+		&:focus{
+			background-color:white!important;
+			color:#0c3d5d !important;
+		}
 	}
 }
 .taskBar.tabs{
 	border:none;
 }
+.tabs-content{
+	border:none;
+}
+// .tabs-panel{
+// 	background-color:$gray;
+// }
 #first_empty{
 }
 #last_empty{
@@ -200,5 +213,4 @@
 #last_link{
 	color:white!important;
 	padding:15px 225px;
-
 }
