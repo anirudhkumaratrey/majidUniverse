@@ -1,3 +1,6 @@
+body{
+	background-color:$gray;
+}
 .navbar{
 	background-color:$blue;
     padding: 0px 10px;
@@ -141,7 +144,8 @@
 	}
 }
 .coverCont{
-    border: 1px solid black;
+    border: 1px solid $gray;
+    background-color: white;
     border-top: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,6 +211,13 @@
     background-color: white;
     text-align: left;
     font-size: 13px;
+	&:first-child{
+		border-left: none;
+	}
+    h5{
+	    // padding-left: 15px;
+	    padding-top: 15px;
+	}
 }
 #first_empty{
 }
@@ -222,4 +233,10 @@
 }
 .intro{
 	list-style: none;
+	margin-left:0;
+	
+	.fa{
+		color:$icon_gray;
+		margin-right:10px;
+	}
 }
