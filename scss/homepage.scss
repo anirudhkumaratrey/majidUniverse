@@ -114,7 +114,7 @@ body{
 		height: 100%;
 		margin:0;
 		overflow: hidden;
-		background-color:#3b5998;
+		background-color:$blue;
 		a{
 			float: left;
 			max-width: 16%;
@@ -211,8 +211,15 @@ body{
     background-color: white;
     text-align: left;
     font-size: 13px;
-	&:first-child{
-		border-left: none;
+	border-left: none;
+	.fa-globe{
+		border: 6px solid $blue;
+		border-radius: 50%;
+		color: white;
+		background-color: $blue;
+		width: 30px;
+		height: 31px;
+		margin-right: 10px;
 	}
     h5{
 	    // padding-left: 15px;
@@ -234,9 +241,17 @@ body{
 .intro{
 	list-style: none;
 	margin-left:0;
-	
 	.fa{
 		color:$icon_gray;
 		margin-right:10px;
+	}
+	a{
+		color:$blue;
+		// font-weight: bold;
+	}
+}
+.content{
+	&_right{
+		border-right:none;
 	}
 }
