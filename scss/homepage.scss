@@ -1,6 +1,10 @@
 body{
 	background-color:$gray;
 }
+.underconstruction{
+	text-align: center;
+	font-weight: bold;
+}
 .navbar{
 	background-color:$blue;
     padding: 0px 10px;
@@ -236,7 +240,7 @@ body{
 }
 #last_link{
 	color:white!important;
-	padding:15px 225px;
+	padding:15px 129.5px;
 }
 .intro{
 	list-style: none;
