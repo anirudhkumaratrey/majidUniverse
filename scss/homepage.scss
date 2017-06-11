@@ -272,3 +272,22 @@ body{
 		border-right:none;
 	}
 }
+.position{
+	padding-top:25px;
+	&__logo{
+		padding-top: 5%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		border: 15px solid white;
+	}
+	&__title{
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: #0c3d5d;
+	}
+	&__company{
+		font-size: 14px;
+		display: inline-block;
+	}
+}
