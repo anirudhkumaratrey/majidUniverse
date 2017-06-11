@@ -179,10 +179,7 @@ body{
 	}
 }
 .taskBar{
-	// border: 1px solid gray;
-	// padding-top: 15px;
 	list-style: none;
-	// padding-left:20%;
 	@include clearfix;
 	a{
 		float: left;
@@ -199,6 +196,10 @@ body{
 			background-color:white!important;
 			color:#0c3d5d !important;
 		}
+		&[aria-selected='true']{
+			background-color:white!important;
+			color:#0c3d5d !important;
+		}
 	}
 }
 .taskBar.tabs{
@@ -210,6 +211,20 @@ body{
 .tabs-panel{
 	padding:0;
 }
+// Arrow Up just make the parent position relative
+// .tabs-title{
+// 	&:after{
+// 		content: '';
+// 		position: absolute;
+// 		width: 0;
+// 		top: 50%;
+// 		left: 100%;
+// 		height: 0;
+// 		border-top: 20px solid transparent;
+// 		border-bottom: 20px solid transparent;
+// 		border-left: 20px solid #ebebeb;
+// 	}
+// }
 .tab_content{
 	border: 10px solid $gray;
     background-color: white;
@@ -226,7 +241,6 @@ body{
 		margin-right: 10px;
 	}
     h5{
-	    // padding-left: 15px;
 	    padding-top: 15px;
 	}
 }
@@ -251,7 +265,6 @@ body{
 	}
 	a{
 		color:$blue;
-		// font-weight: bold;
 	}
 }
 .content{
