@@ -271,7 +271,13 @@ body{
 	&_right{
 		border-right:none;
 		border-bottom:none;
+		border-left:10px solid $gray;
 
+	}
+	&_left{
+		border-left:none;
+		border-right:none;
+		border-bottom:none;
 	}
 }
 .position{
