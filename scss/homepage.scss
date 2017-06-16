@@ -308,3 +308,30 @@ body{
 .riseUp{
 	padding-top:18%;
 }
+.education{
+	overflow: hidden;
+	.almakinah{
+		padding-top:15%;
+	}
+	.position{
+		&__container{
+			text-align: left;
+			padding-right: 50px;
+		}
+		&__title{
+			font-size: 18px;
+		}
+		&__company{
+			font-size: 16px;
+		}
+		&__period{
+			font-size:14px;
+		}
+		&__location{
+			font-size:14px;
+		}
+		&__description{
+			font-size:14px;
+		}
+	}
+}
